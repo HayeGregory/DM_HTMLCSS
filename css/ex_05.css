@@ -1,0 +1,52 @@
+.TFruit td, .TFruit thead{
+    padding: 5px;
+    margin: 5px;
+}
+.TFruit thead th  {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    width: 150px;
+}
+
+.TFruit thead tr th:nth-child(1)  {
+    background-color: white;
+}
+.TFruit thead tr th:nth-child(2)  {
+    text-align: left;
+    padding: 5px;
+}
+.TFruit thead tr th:nth-child(3)  {
+    text-align: right;
+    padding: 5px;
+}
+
+
+.TFruit td:nth-of-type(2){
+    text-align: right;
+}
+
+.TFruit th:nth-of-type(1){
+    padding: 5px;
+    text-align: left;
+}
+
+
+.TFruit tr:nth-last-child(even) {
+    background-color: darkolivegreen;
+}
+
+.TFruit tr:nth-last-child(odd) {
+    background-color: rgb(183, 231, 99);
+}
+
+.TFruit tr:hover  {
+    background-color: rgb(177, 201, 135);
+    color: whitesmoke;
+}
+
+.TFruit td:hover  {
+    background-color: rgb(92, 145, 0);
+}
+
+
+
