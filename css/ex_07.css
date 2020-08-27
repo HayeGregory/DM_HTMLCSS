@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Saira+Condensed:wght@200&family=Schoolbell&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 0.95em;
+}
+h3 {
+    color: rgb(255, 174, 0);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: .3s ease-in-out all;
+}
+a:hover {
+    color: whitesmoke;
+}
+ main{
+    width: 80%;
+    height: 600px;
+    margin: 10%;
+    /*margin-top: 0;*/
+
+}
+header {
+    background-color: darkgrey;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: center;
+    z-index: 10;
+}
+article {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    padding: 15px;
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+
+}
+#slides {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+#slideA {
+    background-color: rgb(8, 109, 109);
+    z-index: 1;
+}
+
+
+
+#slideB {
+
+    position: absolute;
+    top:-1000px;
+    transition: all ease-in .8s;
+}
+#slideB:target {
+    z-index: 2;
+    position: absolute;
+    top:0px;
+    background-color: rgb(109, 8, 25);
+}
+
+
+#slideC {
+
+    background-color: rgb(109, 94, 8);
+    position: absolute;
+    top:-1000px;
+    transition: all ease-in .8s;
+}
+#slideC:target {
+    z-index: 11;
+    position: absolute;
+    top:0px;
+}
