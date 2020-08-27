@@ -1,0 +1,32 @@
+.T1, .T2, .T3, .T4 {
+    font-size: 0.6em;
+    width:50%;
+    border:1px solid #444;
+}
+
+.T1 tr:nth-last-child(even){ 
+    background:#272727;
+    color:#fff;
+}
+
+.T2 tr:nth-last-child(odd){ 
+    background:#9c0f0f;
+    color:#fff;
+}
+
+.T3 tr:nth-last-child(-n+2){ 
+    background:rgb(37, 94, 148);
+    color:#fff;
+}
+
+.T4 tr:nth-child(2){ 
+    background:#145214;
+    text-shadow: 2px 2px 2px rgb(58, 56, 56);
+    color:#fff;
+}
+
+.T4 tr:nth-last-child(6){ 
+    background:#48dd48;
+    text-shadow: 2px 2px 2px rgb(58, 56, 56);
+    color:#fff;
+}
