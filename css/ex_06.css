@@ -1,0 +1,27 @@
+body {
+    margin: 100px;
+    background: #fff;
+    color: #000;
+    font: 16px "lucida grande",arial;
+  }
+  
+  a {
+
+    font-size: 2em;
+    font-weight: bold;
+    color: #789;
+    text-decoration: none;
+    
+
+        transition-property: padding-left;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        
+  }
+  a{transition: all 1s cubic-bezier(0,1.84,.63,.59) 1s}
+  
+    a:hover, a:focus 
+    {
+        color: #0a0;
+        padding-left: 150px;
+    }
