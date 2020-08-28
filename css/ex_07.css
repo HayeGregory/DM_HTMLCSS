@@ -30,6 +30,8 @@ a:hover {
 
 }
 header {
+    position: fixed;
+    top : 0;
     background-color: darkgrey;
     line-height: 40px;
     text-align: center;
@@ -51,9 +53,12 @@ article {
 #slides {
     height: 300px;
     width: 100%;
-    position: relative;
+    position: absolute;
+    position: 100px;
 }
 #slideA {
+    position: absolute;
+    top: 100px;
     background-color: rgb(8, 109, 109);
     z-index: 1;
 }
@@ -82,7 +87,7 @@ article {
     transition: all ease-in .8s;
 }
 #slideC:target {
-    z-index: 11;
+    z-index: 3;
     position: absolute;
     top:0px;
 }
