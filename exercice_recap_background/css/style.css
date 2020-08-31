@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background: url("../../images/dig099.png") center/cover  no-repeat;
+
+    /* background-image: url("../../images/dig099.png");
+    background-position: center;
+    background-size: cover; */
+    height: 200px;
+}
+
+.imgA{
+    height: 200px;
+
+    background: url("../../images/dig01.png") top/cover fixed;
+
+    /* background-image: url("../../images/dig01.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover; */
+}
+.imgB{
+    height: 200px;
+    background: url("../../images/dig04.png") top/cover fixed;
+    /* background-image: url("../../images/dig04.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover; */
+}
+.imgC{
+    height: 200px;
+    background: url("../../images/dig69.png") top/cover fixed;
+    /* background-image: url("../../images/dig69.png");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover; */
+}
+
+footer {
+    background: url("../../images/dig06.png") center/cover;
+    /* background-image: url("../../images/dig06.png");
+    background-size: cover;
+    background-position: center; */
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+/* eviter que le menu footer cache la fin du flux */
+div:nth-last-of-type(1){
+    margin-bottom: 200px;
+}
+nav {
+    height: 100%;
+
+}
+ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+li {
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black ;
+    list-style: none;
+    border-left: 1px dotted white;
+    
+}
+li:hover {
+    color: yellowgreen;
+}
+li:last-child {
+    border-right: 1px dotted white;
+}
+
+h1 {
+    display: inline;
+    position: absolute;
+    left: 20px; top: 20px;
+    color: white;
+    text-shadow: 4px 4px 10px black;
+    background-color: rgba(255,255,255,.4);
+    padding: 20px 30px;
+    font-size: 3rem;
+}
+h2 {
+    margin: 20px 10px;
+    color: darkblue;
+}
+p {
+    padding: 10px 10px;
+}
+p::first-letter {
+    font-size: 2rem;
+    margin-left: 15px;
+}

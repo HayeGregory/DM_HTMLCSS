@@ -1,0 +1,52 @@
+body{	
+	font-family:arial;
+}
+main, p{
+    border: 1px dotted #005286;
+}
+
+#boxA {
+    display: flex;
+    padding: 0px;
+    background: #ED8916;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    align-items:center;
+}
+
+#boxB ,#boxB ul {
+    display: flex;
+    padding: 0px;
+    background: rgb(237, 22, 22);
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    align-items:center;
+}
+
+p{
+    margin: 2px;
+    background-color: yellow;
+    padding: 10px;
+}
+
+
+p:nth-child(2) {
+
+	align-self: flex-end;
+
+}
+p:nth-child(3) {
+	align-self: flex-start;
+
+}
+
+
+li:first-of-type {
+    order: 1;
+}
+
+li:last-of-type {
+    order: -1;
+}
